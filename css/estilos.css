@@ -1,0 +1,25 @@
+#reloj{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 60px;
+    text-shadow: 0px 0px 1px #333;
+    color: rgb(241, 13, 13);
+}
+.reloj-contenedor{
+    background-image: url("https://media.giphy.com/media/IRFQYGCokErS0/giphy.gif");
+    background-size: cover; /* Adjust this property to control how the GIF is scaled */
+    padding: 20px;
+    height: 400px;
+    max-width:  350px;
+    text-align: center;
+    border: rgb(0, 0, 0) 2px solid;
+    border-radius: 5px;
+    margin: 0 auto;
+    margin-top: 5%;
+}
+#fecha{
+    letter-spacing: 10px;
+    font-size: 15px;
+}
+.animar{
+    color: black;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reloj Digital</title>
+    <link href="css/estilos.css" rel="stylesheet"/>
+    <style>
+        body {
+          transition: background-color 0.5s;
+        }
+      </style>
+</head>
+<body style="background-image: url(css/one-piece-pictures.jpg); background-position: -3cm;">
+    <div  style="text-align: center;">
+        <button id="changeColorButton" style="
+              cursor: pointer;
+              display: flex;
+              flex-direction: column;
+              align-items: center;
+              padding: 6px 14px;
+              font-family: -apple-system, BlinkMacSystemFont, 'Roboto', sans-serif;
+              border-radius: 6px;
+              border: none;
+              background: #6E6D70;
+              box-shadow: 0px 0.5px 1px rgba(0, 0, 0, 0.1), inset 0px 0.5px 0.5px rgba(255, 255, 255, 0.5), 0px 0px 0px 0.5px rgba(0, 0, 0, 0.12);
+              color: #DFDEDF;
+              user-select: none;
+              -webkit-user-select: none;
+              touch-action: manipulation;"
+             onclick="changeBackgroundColor()">DarkMode</button>
+    </div>
+    <div style="background-color: black;">
+
+      <h1 style="font-size: 40px; text-align: center; color: aqua;">RELOJ DE LO PUTO MUWIWARA NO PIRATES!!!</h1>
+    </div>
+    <div id="reloj">
+        <div class="reloj-contenedor" id="contenedor">
+            <div id="hora">powered by programartin</div>
+            <div id="fecha">con Javascript</div>
+        </div>
+    </div>
+    <script src="js/reloj.js"></script>
+    <script>
+        // Variable para rastrear el estado del color
+        let isBlack = false;
+      
+        function changeBackgroundColor() {
+          const body = document.body;
+          
+          if (isBlack) {
+            // Cambiar el color de fondo a su estado original
+            body.style.backgroundColor = 'rgb(218, 243, 243)';
+          } else {
+            // Cambiar el color de fondo a negro
+            body.style.backgroundColor = 'black';
+          }
+      
+          // Cambiar el estado
+          isBlack = !isBlack;
+        }
+      </script>
+</body>
+</html>
